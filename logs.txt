@@ -1,0 +1,40 @@
+git add ...
+git commit -m "..."
+git sattus
+git log
+git reset --soft HEAD~n
+#将HEAD移向上n个快照
+git reset HEAD~n /git reset 快照号
+#+回滚到暂存区
+gti reset --hard HEAD~n
+#+暂存区文件还原为工作目录
+git diff (快照号1，快照号2)
+git commit --amend
+#修改最后一次提交说明，不产生新的快照
+{git rm ...（git rm -f ... #暴力删除)
+#删除工作目录和暂存区的文件，但厂库依然有
+git reset --soft HEAD~n
+#将HEAD移向上n个快照
+}
+#删除文件
+git rm --cached ...
+#删除暂存区，保留工作区
+git mv 旧... 新...
+#修改文件名
+#分支
+{git branch ...
+#创建分支
+git log --decorate （--all ,--graph #图形化 --oneline #简化)
+#显示HEAD指向的快照，分支
+git checkout ...
+#切换分支
+git merge ... #合并分支
+git branch -d ... #删除分支，只删除分支名，快照依然存在
+}
+#匿名分支
+{
+git checkout HEAD ~n #向前n个快照创建匿名分支
+...  #实验操作
+git checkout master #切换到master分支，前面的实验操作都心思
+}
+
