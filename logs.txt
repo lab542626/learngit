@@ -37,4 +37,8 @@ git checkout HEAD ~n #向前n个快照创建匿名分支
 ...  #实验操作
 git checkout master #切换到master分支，前面的实验操作都心思
 }
-
+#远程连接
+{
+git remote add origin https://github.com/lab542626/(库名).git
+git push -u origin main
+}
